@@ -4,7 +4,10 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     }
-    
+    :root
+    {
+        --primaire: 	#00A497;
+    }
     header
     {
         text-align: center;  
@@ -19,6 +22,10 @@
 
     }
     
+    em
+    {
+        color: var(--primaire);
+    }
     h1 
     {
         padding: 30px;
@@ -53,6 +60,7 @@
     .titre
     {
         color: black;
+        text-decoration: underline;
     }
    
     
@@ -80,9 +88,17 @@
         width:  auto;
         height: 100px;
         margin-top: 300px;
-        border: 3px solid black;
+        border: 2px solid black;
 
     }
+
+    input:hover
+    {
+        border: 2px solid var(--primaire);
+
+
+    }
+
     .styled {
         line-height: 1;
         padding-top: 20px;
@@ -96,9 +112,9 @@
         color: #fff;
         text-shadow: 1px 1px 1px #000;
         border-radius: 15px;
-        background-color: rgb(208, 208, 214);
-        background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        background-color: #BDC0C1;
+        background-image: linear-gradient(to top left, #BDC0C1, #BDC0C1 30%, #BDC0C1);
+        box-shadow: inset 2px 2px 3px #BDC0C1, inset -2px -2px 3px rgba(0, 0, 0, 0.6);
     }
     
     .styled:hover {
@@ -135,7 +151,7 @@
     
     
     body{
-        background-color: gray;
+        background-color: #BDC0C1;
 
     }
 
@@ -143,7 +159,7 @@
     footer
     {
         margin-top: 30px;
-        background-color: black;
+        background-color: var(--primaire);
         width: auto;
         height: 150px;
         color: white;
@@ -157,7 +173,7 @@
     h3
     {
         text-decoration: none;
-        color: gray;
+        color: white;
     }
     
     .addi
@@ -168,4 +184,14 @@
         height: auto;
         padding: 5px;
         font-style: italic;
+        border-radius: 6px;
+        transition: all 500ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .addi:hover
+    {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.2);
+        border: 2px solid var(--primaire);
     }
