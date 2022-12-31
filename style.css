@@ -14,6 +14,8 @@
         margin-top: 30px;
         margin-bottom: 30px;
         border-radius: 7px;
+        display: flex;
+        justify-content: center;
 
     }
     
@@ -22,7 +24,7 @@
         padding: 30px;
     }
     
-    p
+    .intro
     {
         text-align: center;
         font-size: 20px;
@@ -44,10 +46,14 @@
     {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
 
-
+    .titre
+    {
+        color: black;
+    }
    
     
     
@@ -62,6 +68,9 @@
     padding: 30px;
     font-size: 20px;
     font-style: italic;
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid black;
     }
     
     
@@ -71,6 +80,7 @@
         width:  auto;
         height: 100px;
         margin-top: 300px;
+        border: 3px solid black;
 
     }
     .styled {
@@ -104,6 +114,7 @@
     {
     text-align: center;
     padding: 10px;
+    border: 2px solid black;
     
     }
     
@@ -111,12 +122,14 @@
     {
         text-align: center;
         padding: 10px;
+        border: 2px solid black;
     }
     
     #box3
     {
         text-align: center;
         padding: 10px;
+        border: 2px solid black;
     }
     
     
@@ -136,6 +149,23 @@
         color: white;
         display: flex;
         justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     
+    h3
+    {
+        text-decoration: none;
+        color: gray;
+    }
     
+    .addi
+    {
+        color: black;
+        border: 2px solid black;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        font-style: italic;
+    }

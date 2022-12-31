@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title> Restaurations a emporter</TITLE>
    
@@ -12,7 +13,7 @@
    <header><h1> Commande en livraison</h1></header>           <!-- header avec titre -->
     
     
-  <p> <b>Merci de commander dans ce restaurant , nous vous invitons a commander
+  <p class="intro"> <b>Merci de commander dans ce restaurant , nous vous invitons a commander
      une entrée un plat et un dessert ! </b>.</p>       
 
      
@@ -25,29 +26,31 @@
   
  <section>
     <div>
+      <h3 class="titre">Une entrée :</h3>
     <select name="box1" id="box1">
-        <h3>entrée</h3>
 
-      <option>Crudités 12.5$ </option>
-      <option selected="yes">Pâté en croute 18$</option>
-      <option>Œufs Mayonnaise 9.5$</option>
-      <option>Avocats 24.75$</option>
+      <option value="12.5">Crudités 12.5$ </option>
+      <option value="18" selected="yes">Pâté en croute 18$</option>
+      <option value="9.5">Œufs Mayonnaise 9.5$</option>
+      <option value="24.75">Avocats 24.75$</option>
     </select>
-    
+    <h3 class="titre">Un plat :</h3>
     <select name="box2" id="box2">
 
-        <option>Steak-Frites 30$ </option>
-        <option selected="yes">Choucroute 27.5$</option>
-        <option>Cassoulet 32.5$</option>
-        <option>Couscous 37$</option>
+        <option value="30">Steak-Frites 30$ </option>
+        <option value="27.5"selected="yes">Choucroute 27.5$</option>
+        <option value="32.5">Cassoulet 32.5$</option>
+        <option value="37">Couscous 37$</option>
       
       </select>
+
+      <h3 class="titre">Un Dessert :</h3>
       <select name="box3" id="box3">
 
-        <option>Yaourt 12.5$</option>
-        <option selected="yes">Fruits 10$</option>
-        <option>Glace 16.5$</option>
-        <option>Tartelette 19.75$</option>
+        <option value="12.5">Yaourt 12.5$</option>
+        <option value="10" selected="yes">Fruits 10$</option>
+        <option value="16.5">Glace 16.5$</option>
+        <option value="19.75">Tartelette 19.75$</option>
       
       </select>
     </div>
@@ -56,27 +59,36 @@
     
 
     
-    <input class="styled"
-       type="button"
-       value="Envoyer l'addition">
+    <input class="styled" type="button" value="Envoyer l'addition" onclick="calculerAddition()">
        
        
        
-       <textarea class="zonedetexte" readonly cols="20" rows="20">Addition :</textarea> 
+       <div class="zonedetexte" >
+        
+        <h2>Addition : </h2>  
+        <nav class="addi"><p  id="ptt"></p></nav>
+        <nav class="addi"><p  id="pttt"></p></nav>
+        <nav class="addi"><p  id="ptttt"></p></nav>
+        <p id="total"></p>
+
+
+
+
+
+
+       </div> 
       
       
       </section>
 
 
 
-       <footer>
-        <ul>
-        <li >
-          <ul class="sous">
-           <li><a href="#"> Adresse : 30 Rue charle de gaule Paris</a></li>
-           <li><a href="#"> Numero de telephone :0612052078</a></li>
-           <li><a href="#"> Horaires : Ouvert tout les jours de 11h jusqu'a 22h</a></li>
-        </ul>
+        
+          <footer class="sous">
+           <h3> Adresse : 30 Rue charle de gaule Paris</h3>
+           <h3> Numero de telephone :0612052078</h3>
+           <h3> Horaires : Ouvert tout les jours de 11h jusqu'a 22h</h3>
+        
       </footer  >
   
 
